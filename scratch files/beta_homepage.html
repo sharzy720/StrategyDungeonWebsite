@@ -1,0 +1,126 @@
+<!--Helpful information-->
+<!--https://stackoverflow.com/questions/11042731/container-size-in-html/11042876-->
+
+<!--Goal to resemble-->
+<!--https://www.finalfantasykingdom.net/bbsmelding.php-->
+<!--https://strategywiki.org/wiki/Kingdom_Hearts_Re:Chain_of_Memories-->
+<!--https://www.trueachievements.com/game/KINGDOM-HEARTS-HD-15-25-ReMIX/walkthrough/23-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnathyn's site</title>
+    <style>
+        html, body { width:100%; height:100%; }
+        .head1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        body {
+            margin: 0 auto;
+            background: cornflowerblue;
+            background-position: center;
+            background-size: contain;
+        }
+        .menu {
+            position: center;
+            top: 0;
+            padding: 10px 0px 10px 0px;
+            color: white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu log {
+            right: auto;
+            float: right;
+        }
+        .container-vert {
+            background: none;
+            overflow: none;
+            display: block;
+            z-index: 1;
+        }
+        .firstlayer {
+            background-color: slategrey;
+            min-height: 100%;
+            width: 1280px;
+            margin:0 auto;
+        }
+
+        .padded  {margin-left:20px; margin-right:20px;}
+        div { height:auto; }
+        /*add up to 12 coloumns in a container for the total amount*/
+        .onecol { width:8.33%; float:left; }
+        .twocols { width:16.66%;  float:left; }
+        .threecols { width:25%;  float:left; }
+        .fourcols { width:33.33%;  float:left; }
+        .fivecols { width:41.66%;  float:left; }
+        .sixcols { width:50%;  float:left; }
+        .sevencols { width:58.33%;  float:left; }
+        .eightcols { width:66.66%;  float:left; }
+        .ninecols { width:75%; float:left;  }
+        .tencols { width:83.33%;  float:left; }
+        .elevencols { width:91.66%;  float:left; }
+        .allcols { width:100%;  float:left; }
+
+        .title {text-align: center; text-transform: capitalize}
+        .fillspace {
+            min-height: 100%;
+            margin: 0 auto;
+        }
+        .outter-shadow {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,
+            0, 0, 0.19)
+        }
+        .border {
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container firstlayer outter-shadow border">
+    <div class="container padded">
+        <!--Top bar-->
+        <div class="container title">
+            <h1>Welcome to the strategy dungeon</h1>
+        </div>
+
+        <div class="container allcols border outter-shadow"
+             style="flex-direction: column">
+            <!--Left side menu-->
+            <div class="container fillspace threecols"
+                 style="background-color: darkorange; float: left; flex: 1">
+                <h2 class="padded">2</h2>
+                <p class="padded">testing 2 columns. The quick brown fox
+                    jumped over the big red fence</p>
+                <h3 class="padded">Quick Links</h3>
+                <ul>
+                    <li><a href="tester.html">Kingdom Hearts</a></li>
+                    <li><a href="tester.html">Final Fantasy</a></li>
+                </ul>
+            </div>
+
+            <!--Right side content-->
+            <div class="container ninecols"
+                 style="float: right; min-height: 100%; flex: 1; background-color: blueviolet">
+                <h2>3</h2>
+                <p>testing 2 columns</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

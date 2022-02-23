@@ -1,0 +1,76 @@
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+.container-box {
+    min-height: 200px;
+    max-height: 400px;
+    width: 200px;
+    /*display: flex;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+    background-color:slategrey;
+}
+
+.container-vert {
+    /*background: none;*/
+    /*overflow: none;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    margin: 0 auto;
+    /*z-index: 1;*/
+}
+
+.container-hor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100%;
+}
+
+.content-box {
+    display: block;
+    margin: 0 auto;
+    min-height: 200px;
+    max-height: 400px;
+    width: 200px;
+    background-color:slategrey;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.footer {
+    padding-top: 10px;
+}
+
+/*add up to 12 coloumns in a container for the total amount*/
+.onecol {
+    width:8.33%; float:left; }
+.twocols {
+    width:16.66%;  float:left; }
+.threecols {
+    width:25%;  float:left; }
+.fourcols {
+    width:33.33%;  float:left; }
+.fivecols {
+    width:41.66%;  float:left; }
+.sixcols {
+    width:50%;  float:left; }
+.sevencols {
+    width:58.33%;  float:left; }
+.eightcols {
+    width:66.66%;  float:left; }
+.ninecols {
+    width:75%; float:left;  }
+.tencols {
+    width:83.33%;  float:left; }
+.elevencols {
+    width:91.66%;  float:left; }
+.allcols {
+    width:100%;  float:left; }

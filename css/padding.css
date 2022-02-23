@@ -1,0 +1,17 @@
+.padded  {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.left-padding {
+    margin-left: 20px
+}
+
+.right-padding {
+    margin-right: 20px
+}
+
+.content-padding {
+    margin-top: 10px;
+    margin-bottom: 10px
+}

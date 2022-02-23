@@ -1,0 +1,33 @@
+.site-title {
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px darkslategrey;
+    font-size: x-large;
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: larger;
+    text-shadow: 2px 2px 5px darkslategrey;
+}
+
+.subtitle {
+    padding-top: 4px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: large;
+}
+
+.side-title {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px darkslategrey;
+    font-size: x-large;
+}
+
+p {
+    word-break: normal;
+    white-space: normal;
+}

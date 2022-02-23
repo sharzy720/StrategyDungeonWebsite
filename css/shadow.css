@@ -1,0 +1,16 @@
+.outter-shadow {
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2),
+                0 6px 20px 5px rgba(0, 0, 0, 0.19)
+}
+
+/*Pair with right-bottom-shadow for a 3d look*/
+.inner-shadow {
+    box-shadow: inset 4px 8px 3px rgba(0, 0, 0, 0.2)
+    /*,*/
+    /*            inset 6px 20px 3px rgba(0, 0, 0, 0.19)*/
+}
+
+/*Pair with inner-shadow for a 3d look*/
+.right-bottom-shadow {
+    box-shadow: 8px 8px 3px 0 rgba(0, 0, 0, 0.2)
+}

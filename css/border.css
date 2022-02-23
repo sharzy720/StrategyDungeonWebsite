@@ -1,0 +1,29 @@
+.border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    /*border-radius: 20px;*/
+}
+
+.all-border-curve {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.left-border-curve {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px
+}
+
+.right-border-curve {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+
+.test-border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
