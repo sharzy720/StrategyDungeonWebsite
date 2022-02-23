@@ -35,8 +35,8 @@
 .content-box {
     display: block;
     margin: 0 auto;
-    min-height: 200px;
-    max-height: 400px;
+    min-height: 100px;
+    max-height: 500px;
     width: 200px;
     background-color:slategrey;
     border-style: solid;
