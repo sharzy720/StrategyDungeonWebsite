@@ -4,9 +4,10 @@
 }
 
 .container-box {
-    min-height: 200px;
+    min-height: 100px;
     max-height: 400px;
     width: 200px;
+    margin: 10px;
     /*display: flex;*/
     /*flex-grow: 1;*/
     /*flex-shrink: 1;*/
