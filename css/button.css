@@ -8,6 +8,7 @@
     font-size: 16px;
     border-radius: 8px;
     border: 2px solid cornflowerblue; /* Green */
+    margin-top: 5px;
 }
 
 .flex-button:hover {
