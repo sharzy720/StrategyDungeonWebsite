@@ -9,9 +9,29 @@
     border-radius: 8px;
     border: 2px solid cornflowerblue; /* Green */
     margin-top: 5px;
+    min-width: 100px;
 }
 
 .flex-button:hover {
+    background-color: grey; /* Green */
+    color: white;
+}
+
+.dropdown-button {
+    background-color: cornflowerblue; /* Green */
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid cornflowerblue; /* Green */
+    margin-top: 5px;
+    width: 180px;
+}
+
+.dropdown-button:hover {
     background-color: grey; /* Green */
     color: white;
 }
