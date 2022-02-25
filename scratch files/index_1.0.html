@@ -1,0 +1,230 @@
+<!--Helpful information-->
+<!--https://stackoverflow.com/questions/11042731/container-size-in-html/11042876-->
+
+<!--Goal to resemble-->
+<!--https://www.finalfantasykingdom.net/bbsmelding.php-->
+<!--https://strategywiki.org/wiki/Kingdom_Hearts_Re:Chain_of_Memories-->
+<!--https://www.trueachievements.com/game/KINGDOM-HEARTS-HD-15-25-ReMIX/walkthrough/23-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/border.css">       <!--Border-->
+    <link rel="stylesheet" href="css/containers.css">   <!--Containers-->
+    <link rel="stylesheet" href="css/padding.css">      <!--Padding-->
+    <link rel="stylesheet" href="css/text.css">         <!--Text-->
+    <link rel="stylesheet" href="css/button.css">       <!--Button-->
+    <link rel="stylesheet" href="css/shadow.css">       <!--Shadow-->
+    <link rel="stylesheet" href="css/table.css">        <!--Table-->
+
+    <style>
+        /*.head1 {*/
+        /*    font-size: 40px;*/
+        /*    font-weight: bold;*/
+        /*}*/
+        /*.menu {*/
+        /*    position: center;*/
+        /*    top: 0;*/
+        /*    padding: 10px 0px 10px 0px;*/
+        /*    color: white;*/
+        /*    margin: 0 auto;*/
+        /*    overflow: hidden;*/
+        /*}*/
+        /*.menu a {*/
+        /*    float: left;*/
+        /*    color: white;*/
+        /*    text-align: center;*/
+        /*    padding: 14px 16px;*/
+        /*    text-decoration: none;*/
+        /*    font-size: 20px;*/
+        /*}*/
+        /*.menu log {*/
+        /*    right: auto;*/
+        /*    float: right;*/
+        /*}*/
+        html, body { width:100%; height:100%;}
+        body {
+            margin: 0 auto;
+            background: cornflowerblue center;
+
+            /*background-image: linear-gradient(black, grey, white, grey, black);*/
+
+            /*background-image: url('https://tenor.com/view/matrix-code-matrix-code-encryption-encrypted-gif-5662740');*/
+            /*background-repeat: repeat;*/
+
+
+            background-size: contain;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            /*min-width: 980px;*/
+        }
+        .firstlayer {
+            background-color: slategrey;
+            min-height: 100%;
+            /*min-width: 980px;*/
+            max-width: 1280px;
+            margin:0 auto;
+            border-radius: 20px;
+        }
+        div {
+            height:auto; word-wrap: break-word;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container-vert firstlayer outter-shadow border">
+    <!--        Site title-->
+    <div class="site-title">
+        <h1>Strategy Dungeon</h1>
+    </div>
+
+    <!--        Menu bar-->
+    <div class="container-hor">
+        <div class="container-hor" style="flex: 1">
+            <a href="index.html" class="flex-button">Home</a>
+            <a href="portfolio.html" class="flex-button">Portfolio</a>
+            <a href="game-guides.html" class="flex-button">Walkthroughs</a>
+            <a href="mod-guides.html" class="flex-button">Modding</a>
+            <a href="code-guides.html" class="flex-button">Programming</a>
+            <!--                <a href="code-guides.html" class="button">Emulation</a>-->
+        </div>
+    </div>
+
+    <!--        Main content-->
+    <div class="container-hor content-padding" style="flex: auto">
+
+        <!--            Left side quick links-->
+        <div class="container-vert border left-border-curve left-padding twocols right-bottom-shadow"
+             style="background-color: grey;">
+            <div class="side-title">Quick Links</div>
+            <!--                <h2 class="title">Quick Links</h2>-->
+            <div class="container padded">
+                <!--                    Game Guides-->
+                <h3 style="margin-bottom: 0">Game Guides</h3>
+                <ul style="margin-top: 0">
+                    <li><a href="https://strategywiki.org/wiki/Kingdom_Hearts_Re:Chain_of_Memories">
+                        KH Re:Chain of Memories
+                    </a></li>
+                    <li><a href="https://strategywiki.org/wiki/Star_Wars:_Knights_of_the_Old_Republic">
+                        KOTOR 1
+                    </a></li>
+                    <!--                        <li>-->
+                    <!--                            Final Fantasy-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            Dark souls-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            Pokemon fire red-->
+                    <!--                        </li>-->
+                </ul>
+                <!--                    Mod Guides-->
+                <h3 style="margin-bottom: 0">Mod Guides</h3>
+                <ul style="margin-top: 0">
+                    <li><a href="https://www.youtube.com/">PSP</a></li>
+                    <li>PS Vita</li>
+                    <li>Wii</li>
+                    <li>Wii U</li>
+                    <li>Ps3</li>
+                </ul>
+                <!--                    Programming examples-->
+                <h3 style="margin-bottom: 0">Language Docs</h3>
+                <ul style="margin-top: 0">
+                    <li><a href="https://devdocs.io/openjdk~11/">
+                        Java 11
+                    </a></li>
+                    <li><a href="https://devdocs.io/c/">
+                        C
+                    </a></li>
+                    <li><a href="https://devdocs.io/python~3.9/">
+                        Python 3.9
+                    </a></li>
+                    <li><a href="https://devdocs.io/html/">
+                        Html
+                    </a></li>
+                    <li><a href="https://devdocs.io/css/">
+                        CSS
+                    </a></li>
+                </ul>
+                <!--                    Emulation-->
+                <h3 style="margin-bottom: 0">Emulation</h3>
+                <ul style="margin-top: 0">
+                    <li><a href="https://pcsx2.net">pcsx2</a></li>
+                    <li><a href="https://rpcs3.net">rpcs3</a></li>
+                    <li><a href="https://dolphin-emu.org">dolphin</a></li>
+                    <li><a href="https://cemu.info">cemu</a></li>
+                    <li><a href="https://www.retroarch.com">Retro Arch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--            Right side content-->
+        <div class="container-vert border right-border-curve right-padding right-bottom-shadow"
+                style="flex: 1; background-color: mediumpurple; min-height:
+                 100%">
+            <div class="container padded">
+                <div class="title">
+                    <h2>Welcome to my website</h2>
+                </div>
+                <p style="font-size: medium;">
+                    I made this website for fun to show off my web
+                    development skills and link to my GitHub where the
+                    majority of my programming portfolio is located.
+                    <!--                        This is a handmade website that holds all the guides-->
+                    <!--                        and documentation that I commonly use when programming.-->
+                    <!--                        The top menu bar is links to pages pertaining to different topics.-->
+                    <!--                        Also included in the menu bar is a link to my portfolio which is on GitHub.-->
+                </p>
+
+                <table style="float: right">
+                    <tr>
+                        <th>Content</th>
+                        <th>Release</th>
+                    </tr>
+                    <tr>
+                        <td>Elden Ring</td>
+                        <td>Feb 25</td>
+                    </tr>
+                    <tr>
+                        <td>Steam Deck</td>
+                        <td>Feb 25</td>
+                    </tr>
+                    <tr>
+                        <td>Halo series</td>
+                        <td>Mar 24</td>
+                    </tr>
+                    <tr>
+                        <td>Kirby and the Forgotten Land</td>
+                        <td>Mar 25</td>
+                    </tr>
+                    <tr>
+                        <td>Moon Knight series</td>
+                        <td>Mar 30</td>
+                    </tr>
+                    <tr>
+                        <td>Lego Star Wars the Skywalker Saga</td>
+                        <td>Apr 5</td>
+                    </tr>
+                </table>
+
+                <!--                    <div>Two</div>-->
+                <!--                    <div>Two</div>-->
+                <!--                    <div>Two</div>-->
+                <!--                    <div>Two</div>-->
+            </div>
+        </div>
+    </div>
+
+    <!--        Footer-->
+    <div class="container-hor footer-padding">
+        <!--            <div>Copy Right 2022</div>-->
+    </div>
+</div>
+</body>
+</html>
