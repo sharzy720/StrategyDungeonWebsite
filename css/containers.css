@@ -30,7 +30,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 100%;
+    /*min-height: 100%;*/
 }
 
 .content-box {
@@ -44,10 +44,6 @@
     border-width: 2px;
     border-color: black;
     border-radius: 20px;
-}
-
-.footer {
-    padding-top: 10px;
 }
 
 /*add up to 12 coloumns in a container for the total amount*/
