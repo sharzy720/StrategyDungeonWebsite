@@ -11,7 +11,18 @@
     <link rel="stylesheet" href="css/text.css">         <!--Text-->
     <link rel="stylesheet" href="css/button.css">       <!--Button-->
     <link rel="stylesheet" href="css/shadow.css">       <!--Shadow-->
-
+    <link rel="stylesheet" href="/css/background.css">       <!--Background-->
+    <link rel="stylesheet" href="/css/dropdown_menu.css">    <!--Dropdown Menu-->
+    <script src="/javascript/navBar.js"></script>
+    <!--  <script src="javascript/googleAnalytics.js"></script>-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22HN7L2Z73"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-22HN7L2Z73');
+    </script>
     <style>
         /*.head1 {*/
         /*    font-size: 40px;*/
@@ -47,14 +58,6 @@
             padding-bottom: 20px;
             /*min-width: 980px;*/
         }
-        .firstlayer {
-            background-color: slategrey;
-            min-height: 100%;
-            /*min-width: 980px;*/
-            max-width: 1280px;
-            margin:0 auto;
-            border-radius: 20px;
-        }
         div { height:auto; }
 
     </style>
@@ -64,18 +67,18 @@
 <div class="container-vert firstlayer outter-shadow border">
     <!--        Site title-->
     <div class="site-title">
-        <h1>Strategy Dungeon</h1>
+        <h1>Game Walkthroughs</h1>
     </div>
 
     <!--        Menu bar-->
-    <div class="container-hor">
-        <div class="container-hor" style="flex: 1">
-            <a href="index.html" class="flex-button">Home</a>
-            <a href="portfolio.html" class="flex-button">Portfolio</a>
-<!--            <a href="game-guides.html" class="button">Walkthroughs</a>-->
-            <a href="mod-guides.html" class="flex-button">Modding</a>
-            <a href="code-guides.html" class="flex-button">Programming</a>
-        </div>
+    <div class="topnav" id="nav_bar">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="game-guides.html">Walkthroughs</a>
+        <a href="mod-guides.html">Modding</a>
+        <a href="code-guides.html">Programming</a>
+        <a href="blog.html">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarShrink()">&#9776;</a>
     </div>
 
     <!--        Main content-->
@@ -117,8 +120,7 @@
         <!--        </div>-->
 
         <!--            Right side content-->
-        <div class="container-vert padded all-border-curve right-bottom-shadow"
-             style="flex:auto; background-color: mediumpurple; min-height:100%">
+        <div class="container-vert all-border-curve right-bottom-shadow content-background">
 
             <div class="container padded">
                 <div class="title" style="font-size: xx-large;
