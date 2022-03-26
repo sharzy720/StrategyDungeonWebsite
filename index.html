@@ -13,6 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22HN7L2Z73"></script>-->
+<!--    <script>-->
+<!--        window.dataLayer = window.dataLayer || [];-->
+<!--        function gtag(){dataLayer.push(arguments);}-->
+<!--        gtag('js', new Date());-->
+
+<!--        gtag('config', 'G-22HN7L2Z73');-->
+<!--    </script>-->
+
     <link rel="stylesheet" href="css/border.css">           <!--Border-->
     <link rel="stylesheet" href="css/containers.css">       <!--Containers-->
     <link rel="stylesheet" href="css/padding.css">          <!--Padding-->
@@ -21,6 +31,17 @@
     <link rel="stylesheet" href="css/shadow.css">           <!--Shadow-->
     <link rel="stylesheet" href="css/table.css">            <!--Table-->
     <link rel="stylesheet" href="css/dropdown_menu.css">    <!--Dropdown Menu-->
+    <link rel="stylesheet" href="/css/background.css">       <!--Background-->
+    <script src="/javascript/navBar.js"></script>
+    <!--  <script src="javascript/googleAnalytics.js"></script>-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22HN7L2Z73"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-22HN7L2Z73');
+    </script>
 
     <style>
         /*.head1 {*/
@@ -63,16 +84,12 @@
             padding-bottom: 20px;
             /*min-width: 980px;*/
         }
-        .firstlayer {
-            background-color: slategrey;
-            min-height: 100%;
-            /*min-width: 980px;*/
-            max-width: 1280px;
-            margin:0 auto;
-            border-radius: 20px;
-        }
         div {
             height:auto; word-wrap: break-word;
+        }
+        .center {
+            margin: 0 auto;
+            /*width: 50%;*/
         }
 
     </style>
@@ -86,15 +103,26 @@
         </div>
 
 <!--        Menu bar-->
-        <div class="container-hor">
-            <div class="container-hor" style="flex: 1">
+<!--        <div class="container-hor">-->
+<!--            <div class="container-hor" style="flex: 1">-->
 <!--                <a href="index.html" class="flex-button">Home</a>-->
-                <a href="portfolio.html" class="flex-button">Portfolio</a>
-                <a href="game-guides.html" class="flex-button">Walkthroughs</a>
-                <a href="mod-guides.html" class="flex-button">Modding</a>
-                <a href="code-guides.html" class="flex-button">Programming</a>
+<!--                <a href="portfolio.html" class="flex-button">Portfolio</a>-->
+<!--                <a href="game-guides.html" class="flex-button">Walkthroughs</a>-->
+<!--                <a href="mod-guides.html" class="flex-button">Modding</a>-->
+<!--                <a href="code-guides.html.html" class="flex-button">Programming</a>-->
+<!--                <a href="blog.html" class="flex-button">Blog</a>-->
 <!--                <a href="code-guides.html" class="button">Emulation</a>-->
-            </div>
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="topnav" id="nav_bar">
+            <a href="index.html" class="active">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="game-guides.html">Walkthroughs</a>
+            <a href="mod-guides.html">Modding</a>
+            <a href="code-guides.html">Programming</a>
+            <a href="blog.html">Blog</a>
+            <a href="javascript:void(0);" class="icon" onclick="navBarShrink()">&#9776;</a>
         </div>
 
 <!--        Main content-->
@@ -165,10 +193,8 @@
 <!--                </div>-->
 <!--            </div>-->
 
-<!--            Right side content-->
-            <div class="container-vert border all-border-curve padded right-bottom-shadow"
-                 style="flex: auto; background-color: mediumpurple; min-height:
-                 100%">
+<!--            Main content-->
+            <div class="container-vert all-border-curve right-bottom-shadow content-background">
                 <div class="container padded">
                     <div class="title">
                         <h2>Welcome to my website</h2>
@@ -187,62 +213,104 @@
                     </div>
 
                     <!--Quick Links-->
-                    <div class="subtitle">
-                        Quick Links
-                    </div>
+<!--                    <div class="subtitle">-->
+<!--                        Quick Links-->
+<!--                    </div>-->
 
                     <!--Quick Links dropdown menus-->
-                    <div class="container-hor">
-                        <div class="dropdown">
-                            <button class="dropdown-button">Game Guides</button>
-                            <div class="dropdown-content">
-                                <a href="https://strategywiki.org/wiki/Kingdom_Hearts_Re:Chain_of_Memories">KH Re:Chain of Memories</a>
-                                <a href="https://strategywiki.org/wiki/Star_Wars:_Knights_of_the_Old_Republic">KOTOR 1</a>
-<!--                                <a href="#">Link 3</a>-->
+<!--                    <div class="container-hor">-->
+<!--                        <div class="dropdown">-->
+<!--                            <button class="dropdown-button">Game Guides</button>-->
+<!--                            <div class="dropdown-content">-->
+<!--                                <a href="https://strategywiki.org/wiki/Kingdom_Hearts_Re:Chain_of_Memories">KH Re:Chain of Memories</a>-->
+<!--                                <a href="https://strategywiki.org/wiki/Star_Wars:_Knights_of_the_Old_Republic">KOTOR 1</a>-->
+<!--&lt;!&ndash;                                <a href="#">Link 3</a>&ndash;&gt;-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="dropdown">-->
+<!--                            <button class="dropdown-button">Documentation</button>-->
+<!--                            <div class="dropdown-content">-->
+<!--                                <a href="https://devdocs.io/openjdk~11/">Java 11</a>-->
+<!--                                <a href="https://devdocs.io/c/">C</a>-->
+<!--                                <a href="https://devdocs.io/python~3.9/">Python 3.9</a>-->
+<!--                                <a href="https://devdocs.io/html/">HTML</a>-->
+<!--                                <a href="https://devdocs.io/css/">CSS</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="dropdown">-->
+<!--                            <button class="dropdown-button">Emulation</button>-->
+<!--                            <div class="dropdown-content">-->
+<!--                                <a href="https://pcsx2.net">pcsx2</a>-->
+<!--                                <a href="https://rpcs3.net">rpcs3</a>-->
+<!--                                <a href="https://dolphin-emu.org">dolphin</a>-->
+<!--                                <a href="https://cemu.info">cemu</a>-->
+<!--                                <a href="https://www.retroarch.com">retro arch</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--background-color: #7f5ebd;-->
+                        <div class="topnav"
+                             style="background-color: rebeccapurple; border-radius: 5px"
+                             id="sub_nav_bar">
+                            <div class="nav-title" id="sub_nav_bar_title">Quick Links</div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Game Guides
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content right-bottom-shadow">
+                                    <a href="https://strategywiki.org/wiki/Kingdom_Hearts_Re:Chain_of_Memories">KH Re:Chain of Memories</a>
+                                    <a href="https://strategywiki.org/wiki/Star_Wars:_Knights_of_the_Old_Republic">KOTOR 1</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropdown-button">Documentation</button>
-                            <div class="dropdown-content">
-                                <a href="https://devdocs.io/openjdk~11/">Java 11</a>
-                                <a href="https://devdocs.io/c/">C</a>
-                                <a href="https://devdocs.io/python~3.9/">Python 3.9</a>
-                                <a href="https://devdocs.io/html/">HTML</a>
-                                <a href="https://devdocs.io/css/">CSS</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">Documentation
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content right-bottom-shadow">
+                                    <a href="https://devdocs.io/openjdk~11/">Java 11</a>
+                                    <a href="https://devdocs.io/c/">C</a>
+                                    <a href="https://devdocs.io/python~3.9/">Python 3.9</a>
+                                    <a href="https://devdocs.io/html/">HTML</a>
+                                    <a href="https://devdocs.io/css/">CSS</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropdown-button">Emulation</button>
-                            <div class="dropdown-content">
-                                <a href="https://pcsx2.net">pcsx2</a>
-                                <a href="https://rpcs3.net">rpcs3</a>
-                                <a href="https://dolphin-emu.org">dolphin</a>
-                                <a href="https://cemu.info">cemu</a>
-                                <a href="https://www.retroarch.com">retro arch</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">Emulation
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content right-bottom-shadow">
+                                    <a href="https://pcsx2.net">pcsx2</a>
+                                    <a href="https://rpcs3.net">rpcs3</a>
+                                    <a href="https://dolphin-emu.org">dolphin</a>
+                                    <a href="https://cemu.info">cemu</a>
+                                    <a href="https://www.retroarch.com">retro arch</a>
+                                </div>
                             </div>
+                            <a href="javascript:void(0);"
+                               class="icon"
+                               onclick="subNavBarShrink()">&#9776;</a>
                         </div>
-                    </div>
 
 
                     <!--Release dates-->
                     <div class="container content-padding">
                         <table align="center">
-                            <tr>
-                                <th>Content</th>
-                                <th>Release</th>
-                            </tr>
-                            <tr>
-                                <td>Elden Ring</td>
-                                <td>Feb 25</td>
-                            </tr>
-                            <tr>
-                                <td>Steam Deck</td>
-                                <td>Feb 25</td>
-                            </tr>
-                            <tr>
-                                <td>Halo series</td>
-                                <td>Mar 24</td>
-                            </tr>
+<!--                            <tr>-->
+<!--                                <th>Content</th>-->
+<!--                                <th>Release</th>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>Elden Ring</td>-->
+<!--                                <td>Feb 25</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>Steam Deck</td>-->
+<!--                                <td>Feb 25</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>Halo series</td>-->
+<!--                                <td>Mar 24</td>-->
+<!--                            </tr>-->
                             <tr>
                                 <td>Kirby and the Forgotten Land</td>
                                 <td>Mar 25</td>
