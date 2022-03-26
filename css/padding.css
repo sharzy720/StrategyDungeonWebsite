@@ -3,6 +3,11 @@
     margin-right:20px;
 }
 
+.light-padding {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .left-padding {
     margin-left: 20px
 }
